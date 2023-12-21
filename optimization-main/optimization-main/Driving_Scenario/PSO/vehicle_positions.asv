@@ -1,0 +1,11 @@
+function vehicle_positions = trajectory(center, direction, L, S, dL)
+xc=center(1);
+yc=center(2);
+n = (2*L + S)/2 + 1;
+if direction == "NS"
+    vehicle_positions = [repmat(yc, n, 1);xc-(S/2)-L:-dL:xc+(S/2)+L];
+else
+    
+end
+end
+
